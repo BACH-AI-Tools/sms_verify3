@@ -2,7 +2,7 @@
 
 [English](./README_EN.md) | [简体中文](./README.md) | 繁體中文
 
-RapidAPI: Glavier/sms-verify3
+Sms Verify3 的 MCP 伺服器，由 API-to-MCP 工具自動生成。
 
 ## 🚀 使用 EMCP 平台快速體驗
 
@@ -36,7 +36,6 @@ RapidAPI: Glavier/sms-verify3
 
 - **PyPI 套件名**: `bach-sms_verify3`
 - **版本**: 1.0.0
-- **來源平台**: openapi
 - **傳輸協定**: stdio
 
 
@@ -84,14 +83,22 @@ bach_sms_verify3
 
 ## 配置
 
+### API 認證
 
-### API 认证
-
-此 API 需要认证。请设置环境变量:
+此 API 需要認證。請設定環境變數:
 
 ```bash
 export API_KEY="your_api_key_here"
 ```
+
+### 環境變數
+
+| 變數名 | 說明 | 必需 |
+|--------|------|------|
+| `API_KEY` | API 金鑰 | 是 |
+| `PORT` | 不適用 | 否 |
+| `HOST` | 不適用 | 否 |
+
 
 
 ### 在 Claude Desktop 中使用
@@ -113,7 +120,7 @@ export API_KEY="your_api_key_here"
 }
 ```
 
-**注意**: 请将 `E:\path\to\sms_verify3\server.py` 替换为实际的服务器文件路径。
+**注意**: 請將 `E:\path\to\sms_verify3\server.py` 替換為實際的伺服器檔案路徑。
 
 
 ## 可用工具
@@ -141,6 +148,6 @@ Estimate Cost
 
 ## 开发
 
-此服务器由 [API-to-MCP](https://github.com/yourusername/APItoMCP) 工具自动生成。
+此伺服器由 [API-to-MCP](https://github.com/BACH-AI-Tools/api-to-mcp) 工具自動生成。
 
-生成时间: 1.0.0
+版本: 1.0.0
